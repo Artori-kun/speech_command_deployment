@@ -77,11 +77,9 @@ class Ui_Dialog(object):
         self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);")
         self.Den_PT.setText("")
         self.Den_PT.setObjectName("Den_PN")
-        self.dial = QtWidgets.QDial(Dialog)
-        self.dial.setGeometry(QtCore.QRect(1030, 110, 101, 111))
-        self.dial.setStyleSheet("color: rgb(239, 41, 41);\n"
-                                "background-color: rgb(239, 41, 41);")
-        self.dial.setObjectName("dial")
+        self.btn_ghiam = QtWidgets.QPushButton(Dialog)
+        self.btn_ghiam.setGeometry(QtCore.QRect(1070, 150, 89, 31))
+        self.btn_ghiam.setObjectName("btn_ghiam")
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
@@ -97,6 +95,7 @@ class Ui_Dialog(object):
         self.groupBox_PTam.setTitle(_translate("Dialog", "phòng tắm"))
         self.btn_BatPT.setText(_translate("Dialog", "bật"))
         self.btn_Tat_PT.setText(_translate("Dialog", "tắt"))
+        self.btn_ghiam.setText(_translate("Dialog", "Ghi âm"))
 
     # import test_rc
 
