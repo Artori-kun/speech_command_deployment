@@ -10,7 +10,7 @@ class Recorder:
 
     def __init__(self):
         self.CHUNK = 1024 * 3
-        self.THRESHOLD = 0.3
+        self.THRESHOLD = 0.2
         self.FORMAT = pyaudio.paFloat32
         self.CHANNELS = 1
         self.SAMPLE_RATE = 16000
@@ -127,7 +127,7 @@ class Recorder:
 
 
 # if __name__ == '__main__':
-recorder = Recorder()
-print("Say something")
-recorder.record_sec()
-print("Done")
+# recorder = Recorder()
+# print("Say something")
+# recorder.record_sec()
+# print("Done")
