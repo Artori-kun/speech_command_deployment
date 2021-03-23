@@ -9,16 +9,18 @@ class DemoForm(QDialog):
         super().__init__()
         self.ui = gui.Ui_Dialog()
         self.ui.setupUi(self)
-        self.show()
         self.cur_cmd = -1
+        self.recorder = rec.Recorder()
+        self.ui.btn_ghiam.clicked.connect(lambda: self.response())
+        # self.show()
 
-    @staticmethod
-    def do_record(second=4):
-        recorder = rec.Recorder()
-        return recorder.record_sec(second)
+    # @staticmethod
+    # def do_record(second=4):
+    #     recorder = rec.Recorder()
+    #     return recorder.record_sec(second)
 
     def response(self):
-        self.cur_cmd = self.do_record()
+        self.cur_cmd = self.recorder.record_sec()
         if self.cur_cmd == 0:
             self.ui.batden_phongkhach()
         elif self.cur_cmd == 2:
@@ -29,4 +31,11 @@ class DemoForm(QDialog):
             self.ui.tatden_phongtam()
         elif self.cur_cmd == 30:
             self.ui.remcua_phongngu()
+        else:
+            print("Nothing happened")
 
+
+app = QApplication(sys.argv)
+f = DemoForm()
+f.show()
+sys.exit(app.exec_())

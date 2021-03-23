@@ -101,34 +101,34 @@ class Ui_Dialog(object):
     def batden_phongtam(self):
         self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);\n"
                                   "background-color: rgb(252, 233, 79);")
-        self.Btn_Bat_PT.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.btn_BatPT.setStyleSheet("background-color: rgb(252, 175, 62);")
 
     def tatden_phongtam(self):
         self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);")
-        self.Btn_Tat_PT.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.btn_Tat_PT.setStyleSheet("background-color: rgb(252, 175, 62);")
 
     def batden_phongkhach(self):
         self.Den_PK.setStyleSheet("image: url(./anh/bongden.jpg);\n"
                                   "background-color: rgb(252, 233, 79);")
-        self.Btn_Bat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.btn_Bat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
 
     def tatden_phongkhach(self):
         self.Den_PK.setStyleSheet("image: url(./anh/bongden.jpg);")
-        self.Btn_Tat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.btn_Tat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
 
     def remcua_phongngu(self):
         self.Remcua.setStyleSheet("image: url(./anh/remcua.jpg);\n"
                                   "background-color: rgb(204, 0, 0);")
 
 
-if __name__ == "__main__":
-    import sys
-
-    app = QtWidgets.QApplication(sys.argv)
-    app.setStyle("Fusion")
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_Dialog()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-
-    sys.exit(app.exec_())
+# if __name__ == "__main__":
+#     import sys
+#
+#     app = QtWidgets.QApplication(sys.argv)
+#     app.setStyle("Fusion")
+#     MainWindow = QtWidgets.QMainWindow()
+#     ui = Ui_Dialog()
+#     ui.setupUi(MainWindow)
+#     MainWindow.show()
+#
+#     sys.exit(app.exec_())
