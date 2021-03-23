@@ -1,0 +1,71 @@
+Đèn phòng khách bật
+Đèn phòng ngủ bật
+Đèn phòng tắm bật
+Đèn phòng bếp bật
+Đèn phòng khách tắt
+Đèn phòng ngủ tắt
+Đèn phòng tắm tắt
+Đèn phòng bếp tắt
+Đèn phòng tắm sáng hơn
+Đèn phòng khách tối hơn
+Đèn phòng ngủ tối hơn
+Đèn phòng tắm tối hơn
+Đèn phòng bếp tối hơn
+Bật đèn phòng khách
+Bật đèn phòng ngủ
+Bật đèn phòng tắm
+Bật đèn phòng bếp
+Tắt đèn phòng khách
+Tắt đèn phòng ngủ
+Tắt đèn phòng tắm
+Tắt đèn phòng bếp
+Tăng độ sáng đèn phòng khách
+Tăng độ sáng đèn phòng ngủ
+Tăng độ sáng đèn phòng bếp
+Tăng độ sáng đèn phòng tắm
+Giảm độ sáng đèn phòng khách
+Giảm độ sáng đèn phòng ngủ
+Giảm độ sáng đèn phòng bếp
+Giảm độ sáng đèn phòng tắm
+Đóng rèm cửa phòng khách
+Đóng rèm cửa phòng ngủ
+Đóng rèm cửa phòng tắm
+Mở rèm cửa phòng khách
+Mở rèm cửa phòng ngủ
+Mở rèm cửa phòng tắm
+Rèm cửa phòng khách đóng
+Rèm cửa phòng tắm đóng
+Rèm cửa phòng ngủ đóng
+Rèm cửa phòng khách mở
+Rèm cửa phòng ngủ mở
+Rèm cửa phòng tắm mở
+Rèm cửa phòng khách kéo lên
+Rèm cửa phòng ngủ kéo lên
+Rèm cửa phòng tắm kéo lên
+Rèm cửa phòng khách kéo xuống
+Rèm cửa phòng ngủ kéo xuống
+Rèm cửa phòng tắm kéo xuống
+Kéo rèm cửa phòng khách lên
+Kéo rèm cửa phòng ngủ lên
+Kéo rèm cửa phòng tắm lên
+Kéo rèm cửa phòng khách xuống
+Kéo rèm cửa phòng ngủ xuống
+Kéo rèm cửa phòng tắm xuống
+Đèn phòng khách chuyển màu vàng
+Đèn phòng khách chuyển màu đỏ
+Đèn phòng khách chuyển màu xanh
+Đèn phòng khách chuyển màu tím
+Đèn phòng khách chuyển màu trắng
+Đèn phòng ngủ chuyển màu vàng
+Đèn phòng ngủ chuyển màu đỏ
+Đèn phòng ngủ chuyển màu xanh
+Đèn phòng ngủ chuyển màu tím
+Đèn phòng ngủ chuyển màu trắng
+Cửa phòng khách đóng
+Cửa phòng ngủ đóng
+Cửa phòng tắm đóng
+Cửa phòng bếp đóng
+Cửa phòng khách mở
+Cửa phòng ngủ mở
+Cửa phòng tắm mở
+Cửa phòng bếp mở
