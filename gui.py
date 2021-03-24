@@ -13,21 +13,20 @@ import os
 
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = ".\\platform\\"
 
-CUR_CMD = -1
+# CUR_CMD = -1
 
 
-class Worker(QtCore.QObject):
-    finished = QtCore.pyqtSignal()
-
-    def __init__(self, parent=None):
-        QtCore.QObject.__init__(self, parent=parent)
-        self.continue_run = True
-        self.rec = record_command.Recorder()
-
-    def do_work(self):
-        while self.continue_run:
-            cmd = self.rec.record().__next__()
-
+# class Worker(QtCore.QObject):
+#     finished = QtCore.pyqtSignal()
+#
+#     def __init__(self, parent=None):
+#         QtCore.QObject.__init__(self, parent=parent)
+#         self.continue_run = True
+#         self.rec = record_command.Recorder()
+#
+#     def do_work(self):
+#         while self.continue_run:
+#             cmd = self.rec.record().__next__()
 
 
 class Ui_Dialog(object):
@@ -99,6 +98,7 @@ class Ui_Dialog(object):
 
     # import test_rc
 
+<<<<<<< HEAD
     def batden_phongtam(self, Dialog):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
    
@@ -132,3 +132,39 @@ if __name__ == "__main__":
 
     sys.exit(app.exec_())
 
+=======
+    def batden_phongtam(self):
+        self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);\n"
+                                  "background-color: rgb(252, 233, 79);")
+        self.btn_BatPT.setStyleSheet("background-color: rgb(252, 175, 62);")
+
+    def tatden_phongtam(self):
+        self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);")
+        self.btn_Tat_PT.setStyleSheet("background-color: rgb(252, 175, 62);")
+
+    def batden_phongkhach(self):
+        self.Den_PK.setStyleSheet("image: url(./anh/bongden.jpg);\n"
+                                  "background-color: rgb(252, 233, 79);")
+        self.btn_Bat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
+
+    def tatden_phongkhach(self):
+        self.Den_PK.setStyleSheet("image: url(./anh/bongden.jpg);")
+        self.btn_Tat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
+
+    def remcua_phongngu(self):
+        self.Remcua.setStyleSheet("image: url(./anh/remcua.jpg);\n"
+                                  "background-color: rgb(204, 0, 0);")
+
+
+# if __name__ == "__main__":
+#     import sys
+#
+#     app = QtWidgets.QApplication(sys.argv)
+#     app.setStyle("Fusion")
+#     MainWindow = QtWidgets.QMainWindow()
+#     ui = Ui_Dialog()
+#     ui.setupUi(MainWindow)
+#     MainWindow.show()
+#
+#     sys.exit(app.exec_())
+>>>>>>> 64456c6cba3ea5f1c0cce91413d05a3771a23c67

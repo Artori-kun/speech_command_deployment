@@ -10,7 +10,7 @@ class Recorder:
 
     def __init__(self):
         self.CHUNK = 1024 * 3
-        self.THRESHOLD = 0.3
+        self.THRESHOLD = 0.1
         self.FORMAT = pyaudio.paFloat32
         self.CHANNELS = 1
         self.SAMPLE_RATE = 16000
@@ -56,9 +56,10 @@ class Recorder:
 
         # number of silent frames exceed 80%
         # consider none information is recorded
+        plt.close()
         if num_silent_frame / total_frame > 0.8:
             print("None recorded")
-            return None
+            return -1
         else:
             cmd = self.model.predict(record)
             return cmd
@@ -127,7 +128,7 @@ class Recorder:
 
 
 # if __name__ == '__main__':
-recorder = Recorder()
-print("Say something")
-recorder.record_sec()
-print("Done")
+# recorder = Recorder()
+# print("Say something")
+# recorder.record_sec()
+# print("Done")
