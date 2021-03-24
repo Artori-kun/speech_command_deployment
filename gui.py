@@ -9,7 +9,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os
-import record_command
+# import record_command
 
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = ".\\platform\\"
 
@@ -59,7 +59,7 @@ class Ui_Dialog(object):
         self.btn_Tat_PK.setGeometry(QtCore.QRect(190, 300, 89, 25))
         self.btn_Tat_PK.setObjectName("btn_Tat_PK")
         self.Den_PK = QtWidgets.QLabel(self.groupBox_PKhach)
-        self.Den_PK.setGeometry(QtCore.QRect(40, 60, 181, 231))
+        self.Den_PK.setGeometry(QtCore.QRect(40, 140, 81, 131))
         self.Den_PK.setStyleSheet("image: url(./anh/bongden.jpg);")
         self.Den_PK.setText("")
         self.Den_PK.setObjectName("Den_PN_2")
@@ -73,7 +73,7 @@ class Ui_Dialog(object):
         self.btn_Tat_PT.setGeometry(QtCore.QRect(190, 300, 89, 25))
         self.btn_Tat_PT.setObjectName("btn_Tat_PT")
         self.Den_PT = QtWidgets.QLabel(self.groupBox_PTam)
-        self.Den_PT.setGeometry(QtCore.QRect(50, 60, 181, 231))
+        self.Den_PT.setGeometry(QtCore.QRect(40, 140, 181, 131))
         self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);")
         self.Den_PT.setText("")
         self.Den_PT.setObjectName("Den_PN")
@@ -100,26 +100,24 @@ class Ui_Dialog(object):
     # import test_rc
 
     def batden_phongtam(self, Dialog):
-        self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);\n"
-                                  "background-color: rgb(252, 233, 79);")
-        self.Btn_Bat_PT.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
+   
 
     def tatden_phongtam(self, Dialog):
-        self.Den_PT.setStyleSheet("image: url(./anh/bongden.jpg);")
-        self.Btn_Tat_PT.setStyleSheet("background-color: rgb(252, 175, 62);")
-
+        self.groupBox_PTam.setStyleSheet("background-color: rgb(238, 238, 236);")
+        
     def batden_phongkhach(self, Dialog):
-        self.Den_PK.setStyleSheet("image: url(./anh/bongden.jpg);\n"
-                                  "background-color: rgb(252, 233, 79);")
-        self.Btn_Bat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(252, 233, 79);")
+       
 
     def tatden_phongkhach(self, Dialog):
-        self.Den_PK.setStyleSheet("image: url(./anh/bongden.jpg);")
-        self.Btn_Tat_PK.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(238, 238, 236);")
+        
+    def remcua_dong(self, Dialog):
+        self.groupBox_PNgu.setStyleSheet("background-color: rgb(0,0,0);")
 
-    def remcua_phongngu(self, Dialog):
-        self.Remcua.setStyleSheet("image: url(./anh/remcua.jpg);\n"
-                                  "background-color: rgb(204, 0, 0);")
+    def remcua_mo(self, Dialog):
+        self.groupBox_PNgu.setStyleSheet("background-color: rgb(252, 175, 62);")
 
 
 if __name__ == "__main__":
@@ -133,3 +131,4 @@ if __name__ == "__main__":
     MainWindow.show()
 
     sys.exit(app.exec_())
+
