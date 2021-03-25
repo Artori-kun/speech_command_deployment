@@ -33,7 +33,7 @@ class Worker(QtCore.QObject):
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1200, 395)
+        Dialog.resize(1200, 800)
         Dialog.setLocale(QtCore.QLocale(QtCore.QLocale.Vietnamese, QtCore.QLocale.Vietnam))
         self.groupBox_PNgu = QtWidgets.QGroupBox(Dialog)
         self.groupBox_PNgu.setGeometry(QtCore.QRect(0, 0, 321, 331))
@@ -76,18 +76,38 @@ class Ui_Dialog(object):
     # import test_rc
 
     def batden_phongtam(self, Dialog):
-        self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
+        self.groupBox_PTam.setStyleSheet("background-color: rgb(233, 185, 110);")
 
 
     def tatden_phongtam(self, Dialog):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(238, 238, 236);")
 
     def batden_phongkhach(self, Dialog):
-        self.groupBox_PKhach.setStyleSheet("background-color: rgb(252, 233, 79);")
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(233, 185, 110);")
 
 
     def tatden_phongkhach(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(238, 238, 236);")
+
+    def den_phongtam_sanghon(self, Dialog):
+        self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(233, 185, 110);")
+
+    def den_phongkhach_toihon(self, Dialog):
+        self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(233, 185, 110);")
+
+    def tangdosang_denphongkhach(self, Dialog):
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(252, 233, 79);")
+        
+    def tangdosang_denphongtam(self, Dialog):
+        self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
+  
+    def giamdosang_denphongkhach(self,Dialog):
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(143, 89, 2);")
+
+    def giamdosang_denphongtam(self,Dialog):
+        self.groupBox_PTam.setStyleSheet("background-color: rgb(143, 89, 2);")
 
     def remcua_dong(self, Dialog):
         self.groupBox_PNgu.setStyleSheet("background-color: rgb(0,0,0);")
@@ -95,6 +115,17 @@ class Ui_Dialog(object):
     def remcua_mo(self, Dialog):
         self.groupBox_PNgu.setStyleSheet("background-color: rgb(252, 175, 62);")
 
+    def denphongkhach_chuyenmaudo(self,Dialog):
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(239, 41, 41);")
+
+    def denphongkhach_chuyenmauxanh(self,Dialog):
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(114, 159, 207);")
+
+    def denphongkhach_chuyenmautim(self,Dialog):
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(173, 127, 168);")
+
+   def denphongkhach_chuyenmautrang(self,Dialog):
+        self.groupBox_PKhach.setStyleSheet("background-color: rgb(211, 215, 207);")
 
 if __name__ == "__main__":
     import sys
