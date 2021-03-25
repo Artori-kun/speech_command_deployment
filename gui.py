@@ -33,7 +33,7 @@ class Worker(QtCore.QObject):
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1200, 800)
+        Dialog.resize(1200, 400)
         Dialog.setLocale(QtCore.QLocale(QtCore.QLocale.Vietnamese, QtCore.QLocale.Vietnam))
         self.groupBox_PNgu = QtWidgets.QGroupBox(Dialog)
         self.groupBox_PNgu.setGeometry(QtCore.QRect(0, 0, 321, 331))
