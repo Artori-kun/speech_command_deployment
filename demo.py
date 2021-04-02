@@ -33,6 +33,27 @@ class DemoForm(QDialog):
             self.ui.remcua_dong(None)
         elif self.cur_cmd == 33 or self.cur_cmd == 39:
             self.ui.remcua_mo(None)
+        elif self.cur_cmd == 8:
+            self.ui.den_phongtam_sanghon(None)
+        elif self.cur_cmd == 9:
+            self.ui.den_phongkhach_toihon(None)
+        elif self.cur_cmd == 21:
+            self.ui.tangdosang_denphongkhach(None)
+        elif self.cur_cmd == 24:
+            self.ui.tangdosang_denphongtam(None)
+        elif self.cur_cmd == 25:
+            self.ui.giamdosang_denphongkhach(None)
+        elif self.cur_cmd == 28:
+            self.ui.giamdosang_denphongtam(None)
+        elif self.cur_cmd == 54:
+            self.ui.denphongkhach_chuyenmaudo(None)
+        elif self.cur_cmd == 55:
+            self.ui.denphongkhach_chuyenmauxanh(None)
+        elif self.cur_cmd == 56:
+            self.ui.denphongkhach_chuyenmautim(None)
+        elif self.cur_cmd == 57:
+            self.ui.denphongkhach_chuyenmautrang(None)
+
         else:
             print("Nothing happened")
 
