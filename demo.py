@@ -53,7 +53,10 @@ class DemoForm(QDialog):
             self.ui.denphongkhach_chuyenmautim(None)
         elif self.cur_cmd == 57:
             self.ui.denphongkhach_chuyenmautrang(None)
-
+        elif self.cur_cmd == 66:
+            self.ui.cuaphongbep_dong(None)
+        elif self.cur_cmd == 70:
+            self.ui.cuaphongbep_mo(None)
         else:
             print("Nothing happened")
 
