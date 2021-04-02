@@ -9,25 +9,26 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os
+
 # import record_command
 
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = ".\\platform\\"
 
-CUR_CMD = -1
+
+# CUR_CMD = -1
 
 
-class Worker(QtCore.QObject):
-    finished = QtCore.pyqtSignal()
-
-    def __init__(self, parent=None):
-        QtCore.QObject.__init__(self, parent=parent)
-        self.continue_run = True
-        self.rec = record_command.Recorder()
-
-    def do_work(self):
-        while self.continue_run:
-            cmd = self.rec.record().__next__()
-
+# class Worker(QtCore.QObject):
+#     finished = QtCore.pyqtSignal()
+#
+#     def __init__(self, parent=None):
+#         QtCore.QObject.__init__(self, parent=parent)
+#         self.continue_run = True
+#         self.rec = record_command.Recorder()
+#
+#     def do_work(self):
+#         while self.continue_run:
+#             cmd = self.rec.record().__next__()
 
 
 class Ui_Dialog(object):
@@ -87,13 +88,11 @@ class Ui_Dialog(object):
     def batden_phongtam(self, Dialog):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(233, 185, 110);")
 
-
     def tatden_phongtam(self, Dialog):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(238, 238, 236);")
 
     def batden_phongkhach(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(233, 185, 110);")
-
 
     def tatden_phongkhach(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(238, 238, 236);")
@@ -108,14 +107,14 @@ class Ui_Dialog(object):
 
     def tangdosang_denphongkhach(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(252, 233, 79);")
-        
+
     def tangdosang_denphongtam(self, Dialog):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
-  
-    def giamdosang_denphongkhach(self,Dialog):
+
+    def giamdosang_denphongkhach(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(143, 89, 2);")
 
-    def giamdosang_denphongtam(self,Dialog):
+    def giamdosang_denphongtam(self, Dialog):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(143, 89, 2);")
 
     def remcua_dong(self, Dialog):
@@ -124,17 +123,18 @@ class Ui_Dialog(object):
     def remcua_mo(self, Dialog):
         self.groupBox_PNgu.setStyleSheet("background-color: rgb(252, 175, 62);")
 
-    def denphongkhach_chuyenmaudo(self,Dialog):
+    def denphongkhach_chuyenmaudo(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(239, 41, 41);")
 
-    def denphongkhach_chuyenmauxanh(self,Dialog):
+    def denphongkhach_chuyenmauxanh(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(114, 159, 207);")
 
-    def denphongkhach_chuyenmautim(self,Dialog):
+    def denphongkhach_chuyenmautim(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(173, 127, 168);")
 
-   def denphongkhach_chuyenmautrang(self,Dialog):
+    def denphongkhach_chuyenmautrang(self, Dialog):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(211, 215, 207);")
+
 
 if __name__ == "__main__":
     import sys
@@ -146,4 +146,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-

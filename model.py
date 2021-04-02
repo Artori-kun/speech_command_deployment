@@ -85,7 +85,7 @@ class SpeechModel:
         print(end - start)
         print(str_decoded)
 
-        if best_match > 0.4:
+        if best_match > 0.35:
             return -1
         else:
             return distances.index(best_match)
