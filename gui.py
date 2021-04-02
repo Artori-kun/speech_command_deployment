@@ -85,56 +85,59 @@ class Ui_Dialog(object):
 
     # import test_rc
 
-    def batden_phongtam(self, Dialog):
+    def batden_phongtam(self):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(233, 185, 110);")
 
-    def tatden_phongtam(self, Dialog):
+    def tatden_phongtam(self):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(238, 238, 236);")
 
-    def batden_phongkhach(self, Dialog):
+    def batden_phongkhach(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(233, 185, 110);")
 
-    def tatden_phongkhach(self, Dialog):
+    def tatden_phongkhach(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(238, 238, 236);")
 
-    def den_phongtam_sanghon(self, Dialog):
+    def den_phongtam_sanghon(self):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(233, 185, 110);")
 
-    def den_phongkhach_toihon(self, Dialog):
+    def den_phongkhach_toihon(self):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(233, 185, 110);")
 
-    def tangdosang_denphongkhach(self, Dialog):
+    def tangdosang_denphongkhach(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(252, 233, 79);")
 
-    def tangdosang_denphongtam(self, Dialog):
+    def tangdosang_denphongtam(self):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(252, 233, 79);")
 
-    def giamdosang_denphongkhach(self, Dialog):
+    def giamdosang_denphongkhach(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(143, 89, 2);")
 
-    def giamdosang_denphongtam(self, Dialog):
+    def giamdosang_denphongtam(self):
         self.groupBox_PTam.setStyleSheet("background-color: rgb(143, 89, 2);")
 
-    def remcua_dong(self, Dialog):
+    def remcua_dong(self):
         self.groupBox_PNgu.setStyleSheet("background-color: rgb(0,0,0);")
 
-    def remcua_mo(self, Dialog):
+    def remcua_mo(self):
         self.groupBox_PNgu.setStyleSheet("background-color: rgb(252, 175, 62);")
 
-    def denphongkhach_chuyenmaudo(self, Dialog):
+    def denphongkhach_chuyenmaudo(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(239, 41, 41);")
 
-    def denphongkhach_chuyenmauxanh(self, Dialog):
+    def denphongkhach_chuyenmauxanh(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(114, 159, 207);")
 
-    def denphongkhach_chuyenmautim(self, Dialog):
+    def denphongkhach_chuyenmautim(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(173, 127, 168);")
 
-    def denphongkhach_chuyenmautrang(self, Dialog):
+    def denphongkhach_chuyenmautrang(self):
         self.groupBox_PKhach.setStyleSheet("background-color: rgb(211, 215, 207);")
-
+    def cuaphongbep_dong(self):
+        self.groupBox_PBep.setStyleSheet("background-color: rgb(85, 87, 83);")
+    def cuaphongbep_mo(self):
+        self.groupBox_PBep.setStyleSheet("background-color: rgb(211, 215, 207);")
 
 if __name__ == "__main__":
     import sys
